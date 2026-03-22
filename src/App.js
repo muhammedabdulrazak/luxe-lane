@@ -420,7 +420,7 @@ function FabricCard({ fabric, delay = 0 }) {
   );
 }
 
-export default function LuxeLane() {
+export default function App() {
   const [activeTab, setActiveTab] = useState("women");
   const [heroVisible, setHeroVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
