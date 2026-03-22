@@ -132,7 +132,7 @@ function useInView(threshold = 0.15) {
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
-  }, []);
+  }, [threshold]);
   return [ref, inView];
 }
 
@@ -151,7 +151,7 @@ function ProductCard({ product, delay = 0, category = "women" }) {
   const [hovered, setHovered] = useState(false);
   const [imgErr, setImgErr] = useState(false);
 
-  const handleClick = () => {
+  const onClick = () => {
     window.open(buildWhatsAppURL(product, category), "_blank");
   };
   return (
@@ -421,7 +421,6 @@ function FabricCard({ fabric, delay = 0 }) {
 }
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState("women");
   const [heroVisible, setHeroVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
