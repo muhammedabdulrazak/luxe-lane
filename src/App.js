@@ -151,9 +151,6 @@ function ProductCard({ product, delay = 0, category = "women" }) {
   const [hovered, setHovered] = useState(false);
   const [imgErr, setImgErr] = useState(false);
 
-  const onClick = () => {
-    window.open(buildWhatsAppURL(product, category), "_blank");
-  };
   return (
     <div
       ref={ref}
@@ -420,7 +417,7 @@ function FabricCard({ fabric, delay = 0 }) {
   );
 }
 
-export default function App() {
+export default function LuxeLane() {
   const [heroVisible, setHeroVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
