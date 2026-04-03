@@ -1,11 +1,30 @@
+<<<<<<< HEAD
 # Node
 node_modules/
 npm-debug.log
+=======
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+>>>>>>> b3aef9105c7a0b8c5e34d628233f545f062282d3
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+<<<<<<< HEAD
 # Python
 __pycache__/
 *.py[cod]
@@ -46,3 +65,8 @@ backend/uploads/
 
 # Environment
 .env
+=======
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+>>>>>>> b3aef9105c7a0b8c5e34d628233f545f062282d3
