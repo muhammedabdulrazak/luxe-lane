@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: luxe-lane-backend
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: MONGODB_URL
+        value: "mongodb+srv://username:password@cluster.mongodb.net/luxelane"
+      - key: ADMIN_USER
+        value: "admin"
+      - key: ADMIN_PASS
+        value: "luxelane2025"
+    dir: backend
